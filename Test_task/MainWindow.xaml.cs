@@ -20,9 +20,12 @@ namespace Test_task
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ClientServise Clients;
+
         public MainWindow()
         {
             InitializeComponent();
+            Clients = new ClientServise();
         }
 
         private void FileOpenBt_Click(object sender, RoutedEventArgs e)
@@ -30,7 +33,8 @@ namespace Test_task
             FileReader file = new FileReader();
             if (file.OpenFile() == true)
             {
-                List<string[]> splitText = file.SplitFileText();
+                Clients.AddClients(file.SplitFileText());
+                Clients.SaveChengesInDb();
             }
         }
     }

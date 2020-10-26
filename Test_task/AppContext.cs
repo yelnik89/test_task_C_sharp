@@ -18,7 +18,7 @@ namespace Test_task
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=usersdb;Username=postgres;Password=123");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=Indebtednesses;Username=postgres;Password=123");
         }
     }
 }

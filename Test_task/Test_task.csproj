@@ -154,6 +154,7 @@
     </Compile>
     <Compile Include="AppContext.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="ClientServise.cs" />
     <Compile Include="FileReader.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
