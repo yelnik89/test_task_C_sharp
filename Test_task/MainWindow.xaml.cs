@@ -24,5 +24,14 @@ namespace Test_task
         {
             InitializeComponent();
         }
+
+        private void FileOpenBt_Click(object sender, RoutedEventArgs e)
+        {
+            FileReader file = new FileReader();
+            if (file.OpenFile() == true)
+            {
+                List<string[]> splitText = file.SplitFileText();
+            }
+        }
     }
 }
